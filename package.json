@@ -12,7 +12,7 @@
     "bitcoin",
     "browserify",
     "javascript",
-    "bitcoinjs"
+    "bitcoiniljs"
   ],
   "scripts": {
     "build": "npm run clean && tsc -p ./tsconfig.json && npm run formatjs",
@@ -42,7 +42,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/bitcoinjs/bitcoiniljs-lib.git"
+    "url": "https://github.com/top1st/bitcoiniljs-lib.git"
   },
   "files": [
     "src",
