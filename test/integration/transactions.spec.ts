@@ -156,7 +156,7 @@ describe('bitcoiniljs-lib (transactions with psbt)', () => {
 
     // build and broadcast our RegTest network
     await regtestUtils.broadcast(psbt.extractTransaction().toHex());
-    // to build and broadcast to the actual Bitcoin network, see https://github.com/bitcoinjs/bitcoiniljs-lib/issues/839
+    // to build and broadcast to the actual Bitcoin network, see https://github.com/top1st/bitcoiniljs-lib/issues/839
   });
 
   it('can create (and broadcast via 3PBP) a Transaction with an OP_RETURN output', async () => {

@@ -28,7 +28,7 @@ To contribute a patch, the workflow is as follows:
   1. Create topic branch
   1. Commit patches
   1. Push changes to your fork
-  1. Submit a pull request to https://github.com/bitcoinjs/bitcoiniljs-lib
+  1. Submit a pull request to https://github.com/top1st/bitcoiniljs-lib
 
 [Commits should be atomic](https://en.wikipedia.org/wiki/Atomic_commit#Atomic_commit_convention) and diffs easy to read.
 
@@ -69,7 +69,7 @@ Using TypeScript is for preventing bugs while writing code, as well as automatic
 Bitcoin script payment/script templates are based on community consensus,  but typically adhere to bitcoin-core node policy by default.
 
 - `bitcoinjs.script.decompile` is consensus bound only,  it does not reject based on policy.
-- `bitcoinjs.script.compile` will try to adhere to bitcoin-core `IsStandard` policies rules. (eg. minimalpush in https://github.com/bitcoinjs/bitcoiniljs-lib/pull/638)
+- `bitcoinjs.script.compile` will try to adhere to bitcoin-core `IsStandard` policies rules. (eg. minimalpush in https://github.com/top1st/bitcoiniljs-lib/pull/638)
 
 Any elliptic curve `sign` operations should adhere to `IsStandard` policies, like `LOW_S`, but `verify` should not reject them [by default].
 
