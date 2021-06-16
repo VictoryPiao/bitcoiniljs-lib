@@ -58,7 +58,7 @@ async function buildAndSign(
   const { output } = fn(base);
   if (!output) throw new TypeError('Missing output');
 
-  describe('bitcoinjs-lib (payments - ' + k + ')', () => {
+  describe('bitcoiniljs-lib (payments - ' + k + ')', () => {
     it('can broadcast as an output, and be spent as an input', async () => {
       Object.assign(depends, { prevOutScriptType: k });
       await buildAndSign(depends, output, undefined, undefined);

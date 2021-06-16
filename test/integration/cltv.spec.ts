@@ -22,7 +22,7 @@ const bob = bitcoin.ECPair.fromWIF(
   regtest,
 );
 
-describe('bitcoinjs-lib (transactions w/ CLTV)', () => {
+describe('bitcoiniljs-lib (transactions w/ CLTV)', () => {
   // force update MTP
   before(async () => {
     await regtestUtils.mine(11);

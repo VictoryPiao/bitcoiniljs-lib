@@ -8,7 +8,7 @@ const regtest = regtestUtils.network;
 
 // See bottom of file for some helper functions used to make the payment objects needed.
 
-describe('bitcoinjs-lib (transactions with psbt)', () => {
+describe('bitcoiniljs-lib (transactions with psbt)', () => {
   it('can create a 1-to-1 Transaction', () => {
     const alice = bitcoin.ECPair.fromWIF(
       'L2uPYXe17xSTqbCjZvL2DsyXPCbXspvcu5mHLDYUgzdUbZGSKrSr',
@@ -156,7 +156,7 @@ describe('bitcoinjs-lib (transactions with psbt)', () => {
 
     // build and broadcast our RegTest network
     await regtestUtils.broadcast(psbt.extractTransaction().toHex());
-    // to build and broadcast to the actual Bitcoin network, see https://github.com/bitcoinjs/bitcoinjs-lib/issues/839
+    // to build and broadcast to the actual Bitcoin network, see https://github.com/bitcoinjs/bitcoiniljs-lib/issues/839
   });
 
   it('can create (and broadcast via 3PBP) a Transaction with an OP_RETURN output', async () => {
@@ -168,7 +168,7 @@ describe('bitcoinjs-lib (transactions with psbt)', () => {
       'noredeem',
     );
 
-    const data = Buffer.from('bitcoinjs-lib', 'utf8');
+    const data = Buffer.from('bitcoiniljs-lib', 'utf8');
     const embed = bitcoin.payments.embed({ data: [data] });
 
     const psbt = new bitcoin.Psbt({ network: regtest })

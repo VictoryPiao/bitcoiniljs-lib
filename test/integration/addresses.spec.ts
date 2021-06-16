@@ -5,7 +5,7 @@ import { regtestUtils } from './_regtest';
 const dhttp = regtestUtils.dhttp;
 const TESTNET = bitcoin.networks.testnet;
 
-describe('bitcoinjs-lib (addresses)', () => {
+describe('bitcoiniljs-lib (addresses)', () => {
   it(
     'can generate a random address [and support the retrieval of ' +
       'transactions for that address (via 3PBP)]',
