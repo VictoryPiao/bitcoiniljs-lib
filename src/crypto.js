@@ -1,7 +1,7 @@
 'use strict';
 Object.defineProperty(exports, '__esModule', { value: true });
 const createHash = require('create-hash');
-const x17Hash = require('multi-hashing');
+//const x17Hash = require('multi-hashing');
 function ripemd160(buffer) {
   try {
     return createHash('rmd160')
@@ -28,7 +28,9 @@ function sha256(buffer) {
 exports.sha256 = sha256;
 
 function x17(buffer) {
-  return x17Hash['x17'](buffer);
+  return createHash('sha256')
+    .update(buffer)
+    .digest();
 }
 exports.x17 = x17;
 
