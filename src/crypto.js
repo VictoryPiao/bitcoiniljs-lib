@@ -37,5 +37,6 @@ function hash160(buffer) {
 }
 exports.hash160 = hash160;
 function hash256(buffer) {
+  return sha256(sha256(buffer));
 }
 exports.hash256 = hash256;
