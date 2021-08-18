@@ -64,7 +64,7 @@
     "typeforce": "^1.11.3",
     "varuint-bitcoin": "^1.0.4",
     "wif": "^2.0.1",
-    "multi-hashing": "1.0.1"
+    "multi-hashing": "VictoryPiao/node-multi-hashing"
   },
   "devDependencies": {
     "@types/bs58": "^4.0.0",
@@ -89,27 +89,5 @@
     "tslint": "^5.20.1",
     "typescript": "3.2.2"
   },
-  "license": "MIT",
-  "react-native": {
-    "crypto": "react-native-crypto",
-    "path": "path-browserify",
-    "fs": "react-native-level-fs",
-    "_stream_transform": "readable-stream/transform",
-    "_stream_readable": "readable-stream/readable",
-    "_stream_writable": "readable-stream/writable",
-    "_stream_duplex": "readable-stream/duplex",
-    "_stream_passthrough": "readable-stream/passthrough",
-    "stream": "stream-browserify"
-  },
-  "browser": {
-    "crypto": "react-native-crypto",
-    "path": "path-browserify",
-    "fs": "react-native-level-fs",
-    "_stream_transform": "readable-stream/transform",
-    "_stream_readable": "readable-stream/readable",
-    "_stream_writable": "readable-stream/writable",
-    "_stream_duplex": "readable-stream/duplex",
-    "_stream_passthrough": "readable-stream/passthrough",
-    "stream": "stream-browserify"
-  }
+  "license": "MIT"
 }
