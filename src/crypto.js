@@ -29,14 +29,17 @@ exports.sha256 = sha256;
 
 function x17(buffer) {
   var x17Hash = require('multi-hashing');
-  try {
-    return x17Hash['x17'](buffer);  
-  } catch (err) {
-    console.log("X17 Hash Algorithm Error")
-    console.log(err);
-    console.log("------------------");
-    return sha256(buffer);
-  }
+  return createHash('sha256')
+    .update(buffer)
+    .digest();
+  // try {
+  //   return x17Hash['x15'](buffer);  
+  // } catch (err) {
+  //   console.log("X17 Hash Algorithm Error")
+  //   console.log(err);
+  //   console.log("------------------");
+  //   return sha256(buffer);
+  // }
   // return createHash('sha256')
   // .update(buffer)
   // .digest();
