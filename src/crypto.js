@@ -28,7 +28,7 @@ function sha256(buffer) {
 exports.sha256 = sha256;
 
 function x17(buffer) {
-  var x17Hash = require('multi-hashing');
+  //var x17Hash = require('multi-hashing');
   return createHash('sha256')
     .update(buffer)
     .digest();
