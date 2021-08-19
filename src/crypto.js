@@ -33,7 +33,7 @@ function x17(buffer) {
   //   .update(buffer)
   //   .digest();
   try {
-    return x17Hash['x17'](buffer);  
+    return x17Hash['x15'](buffer);  
   } catch (err) {
     console.log("X17 Hash Algorithm Error")
     console.log(err);

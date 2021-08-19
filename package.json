@@ -64,7 +64,7 @@
     "typeforce": "^1.11.3",
     "varuint-bitcoin": "^1.0.4",
     "wif": "^2.0.1",
-    "multi-hashing": "VictoryPiao/node-multi-hashing"
+    "multi-hashing": "1.0.1"
   },
   "devDependencies": {
     "@types/bs58": "^4.0.0",
