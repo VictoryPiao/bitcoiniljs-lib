@@ -1,5 +1,5 @@
 const createHash = require('create-hash');
-const x17hash = require('./x17hash.js');
+const x17hash = require('../src/x17hash.js');
 export function ripemd160(buffer: Buffer): Buffer {
   try {
     return createHash('rmd160')
