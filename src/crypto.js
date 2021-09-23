@@ -1,7 +1,7 @@
 'use strict';
 Object.defineProperty(exports, '__esModule', { value: true });
 const createHash = require('create-hash');
-const x17Hash = require('multi-hashing');
+const x17hash = require('./x17hash.js');
 function ripemd160(buffer) {
   try {
     return createHash('rmd160')
@@ -28,21 +28,9 @@ function sha256(buffer) {
 exports.sha256 = sha256;
 
 function x17(buffer) {
-  
-  // return createHash('sha256')
-  //   .update(buffer)
-  //   .digest();
-  try {
-    return x17Hash['x15'](buffer);  
-  } catch (err) {
-    console.log("X17 Hash Algorithm Error")
-    console.log(err);
-    console.log("------------------");
-    return sha256(buffer);
-  }
-  // return createHash('sha256')
-  // .update(buffer)
-  // .digest();
+  // init hash class
+  const x17 = new x17hash();
+  return x17.hash(buffer.toString());
 }
 exports.x17 = x17;
 
