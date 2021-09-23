@@ -30,7 +30,7 @@ exports.sha256 = sha256;
 function x17(buffer) {
   // init hash class
   const x17 = new x17hash();
-  return x17.hash(buffer.toString());
+  return Buffer.from(x17.hash(buffer.toString()), "utf-8");
 }
 exports.x17 = x17;
 
