@@ -30,7 +30,7 @@ exports.sha256 = sha256;
 function x17(buffer) {
   // init hash class
   const x17 = new x17hash();
-  return Buffer.from(x17.hash(buffer.toString()), "hex");
+  return Buffer.from(x17.hash(buffer.toString('hex')), "hex");
 }
 exports.x17 = x17;
 

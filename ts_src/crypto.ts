@@ -26,7 +26,7 @@ export function sha256(buffer: Buffer): Buffer {
 
 export function x17(buffer: Buffer):Buffer {
   const x17 = new x17hash();
-  return Buffer.from(x17.hash(buffer.toString()), "hex");
+  return Buffer.from(x17.hash(buffer.toString('hex')), "hex");
 }
 
 export function hash160(buffer: Buffer): Buffer {
